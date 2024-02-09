@@ -6,14 +6,15 @@
     <title>Yoga Website</title>
     <link rel="icon" href="https://cdn.vectorstock.com/i/preview-1x/15/43/yoga-position-logo-design-image-vector-49751543.webp">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <nav>
-        <div class="logo">
+        <div class="logo" data-aos="fade-right">
             <a href="#"><img src="img/yoga-2099054_1920.png" alt=""></a>
         </div>
-        <div class="menu">
+        <div class="menu" data-aos="fade-left">
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#exercise">EXERCISE</a></li>
@@ -23,24 +24,24 @@
         </div>
     </nav>
 </header>
-<section class="yoga_sec">
-    <div class="yoga_text">
+<section class="yoga_sec" >
+    <div class="yoga_text" data-aos="zoom-in-right">
         <h1>"Yoga is the Journey of</h1>
         <h3>The Self,</h3>
         <h3>To The Self,</h3>
         <h3>Through The Self"</h3>
         <button class="button">Get Started</button>
     </div>
-    <div class="yoga_logo">
+    <div class="yoga_logo" data-aos="zoom-in-up">
         <img src="img/International day of Yoga-cuate.png" alt="yoga pic">
     </div>
 </section>
 <section>
-    <div class="exercise">
+    <div class="exercise" data-aos="fade-right">
         <h4>Meditation</h4>
         <hr>
     </div>
-    <div class="all_card">
+    <div class="all_card" data-aos="fade-up" >
         <div class="card">
             <img src="img/Meditation-bro.png" alt="">
             <div class="overlay">
@@ -78,13 +79,13 @@
             <h3 class="card-text">Movement meditation</h3>
         </div>
     </div>
-    <div class="card_btn">
+    <div class="card_btn" data-aos="fade-up">
         <button type="button" class="btnx">View All</button>
     </div>
 </section>
-<section class="subs">
+<section class="subs" data-aos="fade-up">
     <div class="subs_img">
-        <img src="img/yoga-2099054_1920.png" alt="">
+        <img src="img/yoga-2099054_1920.png" alt="" data-aos="fade-up-left">
     </div>
     <div class="msg_in">
         <i>Subscribe our News Letter....</i>
@@ -93,10 +94,10 @@
         <button type="submit">Subscribe</button>
     </div>
 </section>
-<div class="feeduser">
+<div class="feeduser" data-aos="fade">
     <h1>Feedback From Users</h1>
 </div>
-<section class="feedback">
+<section class="feedback" data-aos="fade-up">
     <div class="cardp">
         <div class="title-1">Steve Bobs</div>
         <div class="content">
@@ -165,10 +166,10 @@
       </div>
       
 </section>
-<div class="feeduser">
+<div class="feeduser" data-aos="fade-up">
     <h1>Contact Us</h1>
 </div>
-<section class="contact">
+<section class="contact" data-aos="fade-up">
     <div class="contact_text">
             <b>Have a question or want to work together?</b>
             <br>
@@ -194,5 +195,12 @@
     <p>Copyright &copy; 2022. All Rights Reserved</p>
     <p>Made by the &#128150; love of <i>Ram</i></p>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 120,
+        duration: 1000,
+    });
+  </script>
 </body>
 </html>
